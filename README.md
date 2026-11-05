@@ -1,60 +1,101 @@
-# Miro
+<h1 align="center">
+  <img src="assets/img/icon-sm.png" width="72" alt="EMCP Tools logo"><br>
+  MCP Tools for WordPress &amp; Page Builders
+</h1>
 
-## Introduction
+<div align="center">
 
-Miro is a collaborative visual workspace designed for organizing information, planning projects, and coordinating technical teams. It provides an interactive canvas where users can create diagrams, map processes, structure requirements, and document workflows without the spatial limitations of traditional page-based editors. The platform supports both real-time collaboration and asynchronous contributions, making it suitable for distributed engineering teams.
+[![Version](https://img.shields.io/github/v/release/msrbuilds/elementor-mcp?label=version&color=blue)](https://github.com/msrbuilds/elementor-mcp/releases)
+[![License](https://img.shields.io/badge/license-GPL--2.0--or--later-green.svg)](LICENSE)
+[![PHP](https://img.shields.io/badge/PHP-%3E%3D8.1-8892BF.svg)](https://php.net)
+[![WordPress](https://img.shields.io/badge/WordPress-%3E%3D6.9-21759B.svg)](https://wordpress.org)
+[![Free MCP Tools](https://img.shields.io/badge/Free_MCP_Tools-244-orange.svg)](https://emcptools.com/docs/tools/overview/)
+[![Total MCP Tools with Pro](https://img.shields.io/badge/Total_MCP_Tools_with_Pro-578-blue.svg)](https://emcptools.com/free-vs-pro/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![GitHub Issues](https://img.shields.io/github/issues/msrbuilds/elementor-mcp)](https://github.com/msrbuilds/elementor-mcp/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/msrbuilds/elementor-mcp?style=social)](https://github.com/msrbuilds/elementor-mcp)
 
-The primary workspace is a board containing objects such as sticky notes, text blocks, shapes, connectors, images, tables, and embedded content. These elements can represent system components, development tasks, architectural dependencies, or business processes. Users can arrange objects freely, group related information, and connect elements to illustrate relationships.
+**[Docs](https://emcptools.com/docs/) · [Integrations](https://emcptools.com/integrations/) · [Changelog](https://emcptools.com/changelog) · [Pro](https://emcptools.com/pricing) [Download from WordPress](https://wordpress.org/plugins/emcp-lite/)**
 
-For software development teams, Miro supports activities throughout the project lifecycle. During requirements analysis, engineers can create user story maps and identify functional dependencies. System architects can visualize service interactions, data flows, and infrastructure boundaries. Development teams can use Kanban boards, estimation exercises, and retrospective templates to coordinate Agile workflows.
+</div>
 
-Miro also provides presentation capabilities, commenting, voting, and integrations with project management tools. These features allow teams to discuss technical decisions, collect feedback, and maintain shared context across different stages of implementation.
+Turn your WordPress site into something an AI agent can actually operate.
 
-Access permissions help control collaboration by defining who can view, comment on, or edit boards. Organizations can use these controls to separate internal planning materials from information shared with external stakeholders.
+EMCP Tools is a WordPress plugin that exposes your site as **[MCP](https://modelcontextprotocol.io/) tools**, so Claude, Cursor, and any other MCP client can build Elementor pages, write content, manage plugins and users, audit performance and security, and drive the plugins you already run. It runs on the [MCP Adapter](https://wordpress.org/plugins/mcp-adapter/): EMCP Tools includes a copy, and uses the official plugin instead when it is active.
 
-Miro is particularly useful when technical problems require spatial organization, collaborative analysis, and visual communication rather than conventional linear text documents alone.
+<img width="2331" height="1399" alt="emc-dashboard" src="https://github.com/user-attachments/assets/e939408d-7005-4c0f-b157-fdb353d4c0c6" />
 
-## Creating and Structuring Technical Diagrams
 
-Miro allows engineers to construct technical diagrams directly on a shared canvas. Common applications include software architecture mapping, network topology visualization, database relationship modeling, and service dependency analysis.
+> **EMCP Pro, 10% off for the GitHub community**: use code **`EMCPGIT`** at [emcptools.com/pricing](https://emcptools.com/pricing).
 
-To create a diagram, open a board and select the shape tool. Add shapes representing system components, then use connectors to establish relationships. For example, a microservices architecture diagram might contain an API gateway, authentication service, application services, message broker, and database clusters.
+<img width="2132" height="471" alt="emcp-promo-banner-new" src="https://github.com/user-attachments/assets/d2439b0b-2f56-461d-b3be-1ccc39bc2877" />
 
-Use consistent visual conventions to make diagrams easier to interpret:
 
-- Rectangles: Represent applications, services, or infrastructure components.
-- Arrows: Indicate communication direction or data movement.
-- Containers: Group components belonging to the same subsystem or deployment environment.
-- Labels: Identify interfaces, protocols, or dependencies.
-- Colors: Distinguish logical layers, environments, or component responsibilities.
+## What it does
 
-For example, a payment processing workflow can be represented as a sequence connecting the frontend application, payment API, external payment provider, and transaction database. Connectors can be labeled with operations such as `POST /payments` or `payment.confirmed`.
+**244 Free tools, 578 total with Pro.** These are catalog totals across all supported integrations, including 334 Pro tools. The tools available to your AI client depend on your installed plugins, selected builder, and enabled tools. See the [tool catalog](https://emcptools.com/tools/) for every tool and what it needs.
 
-Frames help divide large boards into manageable sections. A technical team might create separate frames for the current architecture, proposed architecture, migration stages, and unresolved design questions.
+**Build pages.** Dedicated integrations cover Elementor, Bricks, Breakdance, Avada, Divi 5, Thrive Architect, Oxygen, Kirki, WPBakery, Beaver Builder, BeBuilder and Visual Composer. Select one standalone builder while Gutenberg stays available. Spectra, Kadence Blocks, GenerateBlocks, Blocksy Blocks and Otter Blocks have independent toggles. Pro adapters expose native features verified for supported vendor versions; see each bundled skill for scope and limitations.
 
-When working collaboratively, use comments to attach questions or implementation concerns to individual elements. This keeps technical discussion connected to the relevant diagram.
+**Run the site.** Content and taxonomies, media, users, settings, plugins and themes, nav menus, the filesystem, and the database, all over MCP.
 
-For maintainability, establish naming conventions, avoid excessive connector crossings, and update diagrams whenever significant architectural changes occur.
+**Understand and undo.** One-call page snapshots, public front-end HTML inspection, content search across your own pages and templates, a change ledger with rollback, and read-only performance and security scans that return a scored report.
 
-## Collaboration and Agile Project Management
+**Speak your plugins.** Integrations that register only when the plugin is active: ACF, Meta Box, WooCommerce, 8 form builders, 7 SEO plugins, and the Elementor addon packs. New in 3.21.1, free: Redirection, Custom Post Type UI, Pods, WP Mail SMTP, LiteSpeed Cache and Wordfence; in Pro: FluentSMTP, Flamingo, Site Kit and Ultimate Member. Pro also covers Polylang, TranslatePress, TablePress, Tutor LMS, LifterLMS, The Events Calendar, Amelia, FluentCRM, MailPoet and FunnelKit. See the [integrations directory](https://emcptools.com/integrations/).
 
-Miro supports collaborative planning workflows through shared boards, interactive objects, and structured templates. Engineering teams can use these capabilities for sprint planning, backlog refinement, technical workshops, and incident reviews.
+**Animate with GSAP.** Pro includes an opt-in local GSAP 3.15.0 integration: core plus all 24 distributed plugins, stable WordPress handles, context and per-plugin switches, and MCP read/write management.
 
-A typical sprint planning workflow starts with a board divided into sections representing backlog items, selected tasks, dependencies, and risks. Team members add sticky notes for individual work items and include identifiers, estimates, or acceptance criteria.
+Elementor is **optional**. Every WordPress domain works without it; installing Elementor unlocks the page-building family.
 
-For example, a development team implementing an authentication module might create the following tasks:
+→ **[Full tool reference](https://emcptools.com/docs/tools/overview/)**
 
-- `AUTH-101`: Implement token validation.
-- `AUTH-102`: Configure refresh token rotation.
-- `AUTH-103`: Add authentication integration tests.
-- `AUTH-104`: Configure monitoring and alerting.
+## Install
 
-Related tasks can be connected to visualize execution dependencies. This helps identify work that must be completed before downstream implementation begins.
+1. Download the latest `emcp-tools-*.zip` from [Releases](https://github.com/msrbuilds/elementor-mcp/releases/).
+2. In WordPress: **Plugins → Add New → Upload Plugin**, then activate.
+3. Open the **EMCP Tools** menu in the admin sidebar.
 
-During estimation sessions, voting features can help teams prioritize proposals or evaluate alternative approaches. A facilitator can use a timer to limit discussion periods and maintain meeting structure.
+Free installs update in place from **Dashboard → Updates**.
 
-For asynchronous collaboration, participants can leave comments, mention colleagues, and review board changes without attending the same meeting. This is useful when engineering teams operate across different time zones.
+**Requires** WordPress 6.9+ and PHP 8.1+. Elementor 3.20+ is optional (4.0+ for atomic elements). The [MCP Adapter](https://wordpress.org/plugins/mcp-adapter/) is included (the official plugin is used instead when it is active); the Abilities API is in WordPress core.
 
-Integrations with issue-tracking systems such as Jira allow teams to incorporate project items into visual planning activities. However, synchronization behavior depends on the configured integration and available permissions.
+→ [Installation guide](https://emcptools.com/docs/getting-started/installation/) · [Requirements](https://emcptools.com/docs/getting-started/requirements/)
 
-After a workshop, organize decisions into dedicated frames, assign responsibility for unresolved tasks, and export relevant board content when a fixed snapshot is required. This preserves actionable outcomes and prevents the board from becoming an unstructured collection of discussions.
+## Connect your AI client
+
+The **Connection** screen in the admin walks you through four steps and generates a ready-to-paste config for your client, including a one-click `.mcpb` bundle for Claude Desktop. That is the fastest route, and it fills in your site URL and credentials for you.
+
+Step-by-step guides per client:
+
+[Claude Code](https://emcptools.com/docs/connecting/claude-code/) · [Claude Desktop](https://emcptools.com/docs/connecting/claude-desktop/) · [Cursor](https://emcptools.com/docs/connecting/cursor/) · [VS Code](https://emcptools.com/docs/connecting/vscode/) · [Antigravity](https://emcptools.com/docs/connecting/antigravity/) · [ChatGPT](https://emcptools.com/docs/connecting/chatgpt-app/) · [WP-CLI](https://emcptools.com/docs/connecting/wp-cli/) · [OAuth](https://emcptools.com/docs/connecting/oauth/) · [Multiple sites](https://emcptools.com/docs/connecting/multiple-sites/)
+
+Tools not showing up? Start with [no tools appearing](https://emcptools.com/docs/troubleshooting/no-tools-appearing/) or [tool cap exceeded](https://emcptools.com/docs/troubleshooting/tool-cap-exceeded/).
+
+## Safe by default
+
+Every tool runs a real WordPress capability check before it does anything, so an agent can only do what the authenticating user could do by hand.
+
+Anything that writes, deletes, or renders site-wide **ships disabled** and is opt-in from **EMCP Tools → Tools**. Destructive operations additionally require an explicit `confirm: true`. Administrators cannot be edited over MCP, there is no delete-user tool, and filesystem access is confined to the WordPress root with automatic backups and an audit log.
+
+→ [Permission model](https://emcptools.com/docs/tools/overview/#permission-model)
+
+## Sample prompts
+
+The [`prompts/`](prompts/) directory has five complete landing-page blueprints, design system, structure, images, and animations, that build an entire page from a single paste: [Local Business](prompts/LOCAL_BUSINESS.md), [Dental Clinic](prompts/DENTAL_CLINIC.md), [Developer Portfolio](prompts/WEB_DEVELOPER_PORTFOLIO.md), [Hair Salon](prompts/HAIR_SALON.md), [Car Wash](prompts/CAR_WASH.md).
+
+A library of 100 prompts across 20 categories, 50 landing pages and 50 complete websites, is included with [Pro](https://emcptools.com/pricing).
+
+## Contributing
+
+Bug reports, feature requests, and pull requests are all welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+1. Fork the repo
+2. Create a branch (`git checkout -b feature/amazing-tool`)
+3. Make your changes and test locally
+4. Open a Pull Request
+
+**Contributors**: [@msrbuilds](https://github.com/msrbuilds) (author and maintainer)
+
+## License
+
+[GNU General Public License v2.0 or later](LICENSE).
